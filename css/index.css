@@ -5,7 +5,9 @@
 }
 
 body {
-    background-size: cover;
+    background-size: 100% 100vh;
+    background-color: #381D2A;
+    background-repeat: no-repeat;
     background-image: url(../imagens/background.jpeg);
     display: flex;
     flex-wrap: wrap;
@@ -35,17 +37,18 @@ ol li {
     justify-content: center;
     border-right: solid 0.5px white;
     color: white;
-    background-color: #381D2A;
+    background-color: #3E6990;
     width: 33.3%;
-    height: 35px;
+    height: 50px;
     min-width: 106px;
     cursor: pointer;
     text-transform: uppercase;
+    font-weight: 600;
 }
 
 ol li:hover {
-    background-color: #3E6990;
-    color: #F39B6D;
+    background-color: #381D2A;
+    color: #be2f1d;
 }
 
 .titulo1 {
