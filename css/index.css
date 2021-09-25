@@ -8,7 +8,7 @@ body {
     background-size: 100% 120vh;
     background-color: #381D2A;
     background-repeat: no-repeat;
-    background-image: url(../imagens/background.jpeg);
+    background: url('/imagens/background.jpeg') center center no-repeat fixed;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -17,16 +17,27 @@ body {
 
 .cont {
     width: 100%;
-    height: 100%;
+    display: flex;
+    background-color: #3E6990;
+}
+
+.logo {
+    display: flex;
+    width: 90px;
+    justify-content: flex-start;
+    color: white;
+    font-size: 25px;
+    align-items: center;
+    margin-left: 10px;
+    cursor: pointer;
+    font-weight: 600;
 }
 
 ol {
-    margin-top: -1.5px;
-    background-color: black;
+    width: 100%;
     list-style-type: none;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-end;
     flex-wrap: wrap;
 }
 
@@ -35,10 +46,9 @@ ol li {
     display: flex;
     align-items: center;
     justify-content: center;
-    border-right: solid 0.5px white;
     color: white;
     background-color: #3E6990;
-    width: 33.3%;
+    width: 20.3%;
     height: 50px;
     min-width: 106px;
     cursor: pointer;
@@ -46,9 +56,33 @@ ol li {
     font-weight: 600;
 }
 
-ol li:hover {
-    background-color: #381D2A;
-    color: #be2f1d;
+ol li a {
+    text-decoration: none;
+    color: white;
+}
+
+ol li:hover,
+.logo:hover {
+    background-color: #3f7cb6;
+    color: black;
+}
+
+.titulo {
+    background-color: #45981b;
+    width: 100%;
+    height: 330px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url('/imagens/bannertitulo.jpeg') center no-repeat;
+    padding-bottom: 10px;
+    background-color: black;
+}
+
+.divisoria {
+    width: 100%;
+    height: 20px;
+    background-color: black;
 }
 
 .titulo1 {
@@ -199,7 +233,31 @@ ul li img {
     }
 }
 
+.botaozap {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.btnWhats {
+    display: inline;
+}
+
+.descript {
+    display: flex;
+    flex-wrap: wrap;
+    color: whitesmoke;
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    padding: 15px;
+    background-color: #3E6990;
+}
+
 @media screen and (max-width:429px) {
+    ol {
+        margin-top: 50px;
+    }
     ol li {
         width: 100%;
         border-top: 1px solid white;
@@ -220,6 +278,15 @@ ul li img {
     }
     .container li {
         animation: slidemenor 13s infinite ease-out;
+    }
+    .logo {
+        display: none;
+    }
+    .cont {
+        padding-bottom: 50px;
+        align-items: center;
+        justify-content: center;
+        height: 150px;
     }
 }
 
