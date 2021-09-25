@@ -4,10 +4,11 @@
     box-sizing: border-box;
 }
 
+html {
+    background-color: black;
+}
+
 body {
-    background-size: 100% 120vh;
-    background-color: #381D2A;
-    background-repeat: no-repeat;
     background: url('/imagens/background.jpeg') center center no-repeat fixed;
     display: flex;
     flex-wrap: wrap;
