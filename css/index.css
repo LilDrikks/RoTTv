@@ -161,36 +161,6 @@
         animation: slide 13s infinite ease-out;
     }
     
-    @keyframes slidemenor {
-        0% {
-            left: 0px;
-        }
-        12% {
-            left: 0px;
-        }
-        24% {
-            left: -320px;
-        }
-        36% {
-            left: -320px;
-        }
-        48% {
-            left: -640px;
-        }
-        60% {
-            left: -640px;
-        }
-        72% {
-            left: -1280px;
-        }
-        84% {
-            left: -1280px;
-        }
-        100% {
-            left: 0px;
-        }
-    }
-    
     @keyframes slide {
         0% {
             left: 0px;
@@ -303,6 +273,35 @@
         }
         .descript {
             margin: 15px;
+        }
+        @keyframes slidemenor {
+            0% {
+                left: 0px;
+            }
+            12% {
+                left: 0px;
+            }
+            24% {
+                left: -320px;
+            }
+            36% {
+                left: -320px;
+            }
+            48% {
+                left: -640px;
+            }
+            60% {
+                left: -640px;
+            }
+            72% {
+                left: -960px;
+            }
+            84% {
+                left: -960px;
+            }
+            100% {
+                left: 0px;
+            }
         }
     }
     
