@@ -11,22 +11,36 @@
 </head>
 
 <body>
-    <div class="cont">
-        <p class='logo'>ROTTV</p>
-        <ol class="listMenu">
 
-            <li>
-                <a href="http://wa.me/5511954109127?text=Gostaria%20de%20fazer%20o%20teste%20dos%20canais.">whatsapp</a>
-            </li>
+    <header id="header">
+        <p>ROTTV</p>
+        <nav id="nav">
+            <!-- aria-controls indica que button controla menu-->
+            <!-- aria-hospopup indica que existe (true) um popup nesse button-->
+            <!-- aria-label indica o texto guia sobre oque é ou oque faz o button (abrir menu)-->
+            <button id="btn-mobile" aria-controls="menu" aria-haspopup="true" aria-label="Abrir Menu">
+                MENU
+        <span id="hamburguer"></span>
+            </button>
+            <!-- atributo role define ao browser que tipo de objeto é a tag-->
+            <ul id="menu" role="menu">
+                <li>
+                    <a href="">Home</a>
+                </li>
+                <li>
+                    <a href="">TV Box</a>
+                </li>
+                <li>
+                    <a href="">Promoções</a>
+                </li>
+                <li>
+                    <a href="">Contato</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
 
-            <li>
-                serviços
-            </li>
 
-            <li>
-                <a href="mailto:rottvfilmesseries@gmail.com">Contato</a></li>
-        </ol>
-    </div>
     <div class="titulo">
         <h1 class="titulo1">Sua TV com os melhores canais de filmes, séries, desenhos infantis e mais!</h1>
     </div>
@@ -35,9 +49,9 @@
         <figure class="carrossel">
             <div class="container" id="img">
                 <ul>
-                    <li><img src="imagens/banner1.jpeg" alt="Promoção"></li>
+                    <li><img src="imagens/bannerValor.jpg" alt="Promoção"></li>
                     <li><img src="imagens/banner2.jpeg" alt="Promoção"></li>
-                    <li><img src="imagens/banner3.jpeg" alt="Promoção"></li>
+                    <li><img src="imagens/banner1.jpeg" alt="Promoção"></li>
                     <li><img src="imagens/logoTV.jpg" alt="Promoção"></li>
                 </ul>
             </div>
