@@ -424,7 +424,7 @@
                 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
             }
             #nav.active #menu {
-                height: 200vh;
+                height: 38%;
                 display: block;
                 visibility: visible;
             }
